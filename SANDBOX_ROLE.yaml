@@ -1,0 +1,17 @@
+﻿sandbox:
+  role: autonomous_execution_domain
+  governed_by: quantum-x-builder
+  autonomy: enabled
+
+hard_boundaries:
+  may_not:
+    - modify_control_plane
+    - modify_governance
+    - self_approve_outputs
+    - bypass_validation
+    - write_outside_sandbox
+
+authority:
+  execution: allowed
+  decision: local_only
+  approval: external_required

@@ -1,0 +1,13 @@
+﻿agent_runtime:
+  autonomy: full_within_sandbox
+
+constraints:
+  filesystem:
+    scope: sandbox_only
+  network:
+    outbound: allowed
+    inbound: denied
+
+termination:
+  on_violation: immediate
+  initiated_by: sandbox_controller

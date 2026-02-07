@@ -1,0 +1,12 @@
+﻿validation_pipeline:
+  required: true
+
+steps:
+  - static_analysis
+  - unit_tests
+  - integration_tests
+  - benchmarks
+
+failure_policy:
+  on_failure: block_output
+  no_override: true

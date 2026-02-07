@@ -1,0 +1,17 @@
+﻿sandbox_role:
+  purpose: execution_and_experimentation
+  governed_by: quantum-x-builder
+
+constraints:
+  must_emit:
+    - signed_validation_report
+    - benchmark_results
+  may_not:
+    - modify_control_plane
+    - bypass_validation
+    - self_approve_changes
+
+handoff:
+  validation_reports: _OPS/VALIDATION/REPORTS
+  violations: _OPS/DASHBOARD
+  telemetry: _OPS/TELEMETRY

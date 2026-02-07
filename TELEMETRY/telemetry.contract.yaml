@@ -1,0 +1,12 @@
+﻿telemetry:
+  purpose: audit_and_observability
+  blocking: false
+
+events:
+  - agent_started
+  - task_completed
+  - validation_failed
+  - output_emitted
+
+retention:
+  append_only: true

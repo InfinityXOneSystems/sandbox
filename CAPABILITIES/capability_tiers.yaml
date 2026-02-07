@@ -1,0 +1,36 @@
+﻿tiers:
+  tier_0:
+    name: read_only
+    allowed:
+      - inspect
+      - analyze
+
+  tier_1:
+    name: planning
+    allowed:
+      - plan
+      - decompose_tasks
+
+  tier_2:
+    name: coding
+    allowed:
+      - write_code
+      - refactor
+      - generate_tests
+
+  tier_3:
+    name: testing
+    allowed:
+      - run_tests
+      - benchmark
+      - lint
+
+  tier_4:
+    name: packaging
+    allowed:
+      - generate_artifacts
+      - emit_reports
+
+promotion:
+  manual_only: true
+  audited: true

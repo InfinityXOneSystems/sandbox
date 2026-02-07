@@ -1,0 +1,17 @@
+﻿output:
+  must_be_signed: true
+
+signature:
+  type: cryptographic
+  identity: sandbox_controller
+
+required_fields:
+  - commit_hash
+  - validation_status
+  - benchmark_status
+  - ruleset_version
+  - timestamp
+
+delivery:
+  destination: quantum-x-builder
+  method: pull_only
